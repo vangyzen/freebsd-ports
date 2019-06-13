@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	tcptestsuite
-PORTVERSION=	0.0.3
+PORTVERSION=	0.0.4
 CATEGORIES=	net ipv6
 
 MAINTAINER=	gnn@FreeBSD.org
@@ -12,14 +12,16 @@ LICENSE=	BSD2CLAUSE
 RUN_DEPENDS=	packetdrill:net/packetdrill
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	freebsd-net
+GH_ACCOUNT=	vangyzen	# TODO freebsd-net
 GH_PROJECT=	tcp-testsuite
-GH_TAGNAME=	f7a1844
+GH_TAGNAME=	c0066c2
 
 NO_ARCH=	yes
-NO_BUILD=	yes
 
-do-install:
+pre-install:
+	${MKDIR} -p ${STAGEDIR}${PREFIX}/tests/tcptestsuite
+
+post-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/run-all-tests ${STAGEDIR}${DATADIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/run-tests.sh ${STAGEDIR}${DATADIR}

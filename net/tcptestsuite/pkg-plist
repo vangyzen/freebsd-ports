@@ -997,3 +997,5 @@
 %%DATADIR%%/state-event-engine/rcv-syn-time-wait/run-all-rcv-syn-time-wait-tests
 %%DATADIR%%/state-event-engine/run-all-state-event-engine-tests
 %%DATADIR%%/state-event-engine/tcpstate.d
+tests/tcptestsuite/Kyuafile
+tests/tcptestsuite/tcptestsuite_atf_test
