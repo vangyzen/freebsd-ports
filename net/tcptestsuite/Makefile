@@ -14,7 +14,7 @@ RUN_DEPENDS=	packetdrill:net/packetdrill
 USE_GITHUB=	yes
 GH_ACCOUNT=	vangyzen	# TODO freebsd-net
 GH_PROJECT=	tcp-testsuite
-GH_TAGNAME=	c0066c2
+GH_TAGNAME=	4b6e584
 
 NO_ARCH=	yes
 

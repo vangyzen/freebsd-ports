@@ -389,6 +389,7 @@
 %%DATADIR%%/snd-syn/snd-syn-without-sack-ipv6.pkt
 %%DATADIR%%/snd-syn/snd-syn-without-ws-and-ts-ipv4.pkt
 %%DATADIR%%/snd-syn/snd-syn-without-ws-and-ts-ipv6.pkt
+%%DATADIR%%/snd-syn/timeout
 %%DATADIR%%/snippets/README.md
 %%DATADIR%%/snippets/all-snippets
 %%DATADIR%%/snippets/close-wait-ipv4.pkt
